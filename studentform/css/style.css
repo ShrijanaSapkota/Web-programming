@@ -1,0 +1,19 @@
+h1,h2{
+    color:rgb(235, 139, 155);
+
+}
+body {
+    font-family: Arial, Verdana, sans-serif;}
+    p {
+        color: #665544;}
+        h1,p {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            padding-left: 20px;
+        }
+        p::after
+        {
+
+            Hello;
+        }

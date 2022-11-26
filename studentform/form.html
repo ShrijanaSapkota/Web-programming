@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body {
+            font-family: Helvetica, sans-serif;
+            color: #665544;
+            border: 2px solid #e7642c;
+            padding: 20px;}
+            h1 {
+                text-align: center;
+                border: 2px solid #e7642c;
+                padding: 10px;
+                }
+
+            
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    
+    <h1 style="color:red">Employee Registration Form</h1>
+    <form action="/action_page.php" method="get">
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+        <div>
+        <label for="fname"><b>First Name:</b></label><br>
+        <input type="text" placeholder="Enter your first name"><br><br>
+        </div>
+
+        <div>
+            <label for="lname"><b>Last Name:</b></label><br>
+            <input type="text" placeholder="Enter your Last name"br><br><br>
+
+        </div>
+        <div>
+            <label for="DOB"><b>Date of Birth:</b></label><br>
+            <input type="date" id="date" name="date"><br><br>
+        </div>
+     
+        <div>
+            <b>Gender:</b><br>
+            <input type="radio" name="gender" id="html">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="html">
+            <label for="female">Female</label><br><br>
+        </div>
+        
+       
+        <div>
+            <p><b>Country:</b><br>
+            <input list="country" placeholder="Select your country"><br>
+            <datalist id="country">
+                 <option value="Nepal"></option>
+                 <option value="USA"></option>
+                 <option value="Japan"></option>
+                 <option value="Australia"></option>
+                 <option value="Norway"></option>
+                 </datalist><br>
+                </p>
+        </div>
+        <div>
+            <label for="Email"><b>Email</b></label><br>
+            <input type="text" name="Email" id="Email" placeholder="Enter email" required><br><br>
+        </div>  
+        <div>
+            <label for="Phone"><b>Phone:</b></label><br>
+        <input type="text" name="Phone" id="Phone" placeholder="Enter your phone number"><br>
+      <br>  </div>
+    </fieldset>
+       
+    </div>
+    <fieldset><legend><b>Other information</b></legend>
+    <div>
+        <p>Write something about your knowledge.(With validation:maximum characters 100)<br>
+        <textarea name="comments" id="2" cols="20" rows="10" maxlength="100">Enter your comments...</textarea>
+        </p>    
+    </div>
+    <div>
+        <p>Your hobbies:(You can select more than one.)<br>
+        <input type="checkbox" name="h1" value="travelling">Travelling<br>
+        <input type="checkbox" name="h2" value="music">Music<br>
+        <input type="checkbox" name="h3" value="programming" checked>Programming<br>
+        </p>
+    </div>
+    <p><b>Upload your resume:</b><br>
+    <input type="file" name="resume"><br>
+    </p>
+</fieldset><br>
+<button type="submit">Submit</button>
+<input type="Reset">
+       
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+.fancy {
+    font-weight: bold;
+    border: 2px solid #e7642c;
+    border-radius: 10px;
+    }
+#introduction
+{
+    font-family: verdana;
+    font-size: 20px;
+}
+li>a{
+    text-decoration: dotted;
+    size: 30cm;
+    font-size: 200;
+}
+    
